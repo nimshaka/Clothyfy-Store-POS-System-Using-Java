@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="529.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e6e6dd" height="393.0" layoutX="-1.0" layoutY="181.0" stroke="WHITE" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b2b2b" height="203.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <ImageView fitHeight="252.0" fitWidth="252.0" layoutX="182.0" layoutY="-49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="86.0" layoutY="448.0" onAction="#btnManagerLoginOnAction" prefHeight="44.0" prefWidth="155.0" style="-fx-background-color: #2b2b2b;" text="MANAGER" textAlignment="CENTER" textFill="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="359.0" layoutY="448.0" onAction="#btnCashierLoginOnAction" prefHeight="44.0" prefWidth="155.0" style="-fx-background-color: #2b2b2b;" text="CASHEIR" textFill="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="86.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/manager.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="359.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/cashier.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="175.0" layoutY="538.0" text="2024 INSIDE OUT. All Rights Reserved©." textFill="#2b2b2b">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="218.0" text="CLOTHIFY PANADURA" textFill="#b33939">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="497.0" layoutY="216.0" onAction="#btnAboutUsOnAction" prefHeight="32.0" prefWidth="75.0" style="-fx-background-color: #2b2b2b;" text="ABOUT US📞" textFill="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="10.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b2b2b" height="203.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <ImageView fitHeight="252.0" fitWidth="252.0" layoutX="174.0" layoutY="-61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e6e6dd" height="393.0" layoutY="191.0" stroke="WHITE" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="167.0" layoutY="548.0" text="2024 INSIDE OUT. All Rights Reserved©." textFill="#2b2b2b">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="212.0" text="ALL ABOUT US ®" textFill="#b33939">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b2b2b" height="252.0" layoutX="72.0" layoutY="262.0" stroke="BLACK" strokeType="INSIDE" width="458.0" />
+      <Text fill="#e6e6dd" layoutX="113.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clothify Store (PVT) Ltd., owned by Mr. Sheshan Thilakshana, is your go-to fashion destination in Panadura. Specializing in high-quality, stylish clothing for all occasions, Clothify Store offers a diverse range of trendy and affordable apparel. With a commitment to customer satisfaction, the store ensures a seamless shopping experience both in-store and online. For inquiries, reach out at " textAlignment="CENTER" wrappingWidth="374.1367492675781">
+         <font>
+            <Font name="Microsoft New Tai Lue" size="16.0" />
+         </font>
+      </Text>
+      <Label layoutX="91.0" layoutY="475.0" text="Contact Us 📞 04123 456 789 " textFill="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="475.0" text="Email clothify@sample.com " textFill="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.gentsitem.ViewGentsitemDatatableFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b2b2b" height="203.0" stroke="BLACK" strokeType="INSIDE" width="756.0" />
+      <ImageView fitHeight="252.0" fitWidth="252.0" layoutX="272.0" layoutY="-49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e6e6dd" height="374.0" layoutY="203.0" stroke="WHITE" strokeType="INSIDE" width="756.0" />
+      <TableView fx:id="tblGentsitem" layoutX="39.0" layoutY="262.0" prefHeight="215.0" prefWidth="406.0" style="-fx-background-color: #e6e6dd;">
+         <columns>
+            <TableColumn fx:id="colGentsitemId" prefWidth="62.333343505859375" text="G.Item ID" />
+            <TableColumn fx:id="colName" prefWidth="95.00003051757812" text="Name" />
+            <TableColumn fx:id="colSize" prefWidth="73.66668701171875" text="Size" />
+            <TableColumn fx:id="colPrice" prefWidth="81.6666259765625" text="Price" />
+            <TableColumn fx:id="colQty" prefWidth="90.3333740234375" text="Qty" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="txtName" focusColor="#2b2b2b" layoutX="531.0" layoutY="313.0" prefHeight="32.0" prefWidth="197.0" promptText="Name" stylesheets="@../styles.css" unFocusColor="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSize" focusColor="#2b2b2b" layoutX="531.0" layoutY="353.0" prefHeight="32.0" prefWidth="197.0" promptText="Size" stylesheets="@../styles.css" unFocusColor="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPrice" focusColor="#2b2b2b" layoutX="531.0" layoutY="392.0" prefHeight="32.0" prefWidth="197.0" promptText="Price" stylesheets="@../styles.css" unFocusColor="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtQty" focusColor="#2b2b2b" layoutX="531.0" layoutY="435.0" prefHeight="32.0" prefWidth="197.0" promptText="Quantity " stylesheets="@../styles.css" unFocusColor="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="551.0" layoutY="488.0" onAction="#btnUpdateOnAction" prefHeight="32.0" prefWidth="82.0" style="-fx-background-color: #2b2b2b;" text="UPDATE" textAlignment="CENTER" textFill="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="650.0" layoutY="488.0" onAction="#btnRemoveOnAction" prefHeight="32.0" prefWidth="82.0" style="-fx-background-color: #2b2b2b;" text="REMOVE" textAlignment="CENTER" textFill="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtGentsitemId" focusColor="#2b2b2b" layoutX="531.0" layoutY="273.0" prefHeight="32.0" prefWidth="197.0" promptText="G.Item_ID" stylesheets="@../styles.css" unFocusColor="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="265.0" layoutY="552.0" text="2024 INSIDE OUT. All Rights Reserved©." textFill="#2b2b2b">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="525.0" layoutY="226.0" prefHeight="27.0" prefWidth="205.0" text="GENTS ITEM RECORDS" textAlignment="CENTER" textFill="#b33939">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="452.0" layoutY="488.0" onAction="#btnSearchOnAction" prefHeight="32.0" prefWidth="82.0" style="-fx-background-color: #2b2b2b;" text="SEARCH" textAlignment="CENTER" textFill="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.order.PlaceOrderFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b2b2b" height="203.0" stroke="BLACK" strokeType="INSIDE" width="876.0" />
+      <ImageView fitHeight="252.0" fitWidth="252.0" layoutX="311.0" layoutY="-49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e6e6dd" height="426.0" layoutY="203.0" stroke="WHITE" strokeType="INSIDE" width="876.0" />
+      <TableView fx:id="tblAddToCart" layoutX="31.0" layoutY="278.0" prefHeight="200.0" prefWidth="495.0" style="-fx-background-color: #e6e6dd;">
+         <columns>
+            <TableColumn fx:id="colItemId" prefWidth="75.33334350585938" text="Item ID" />
+            <TableColumn fx:id="colName" prefWidth="113.33331298828125" text="Name" />
+            <TableColumn fx:id="colPrice" prefWidth="101.66668701171875" text="Price" />
+            <TableColumn fx:id="colQty" prefWidth="79.33331298828125" text="Qty" />
+            <TableColumn fx:id="colTotal" prefWidth="124.0" text="Total" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="502.0" onAction="#btnHistoryOnAction" prefHeight="32.0" prefWidth="82.0" style="-fx-background-color: #2b2b2b;" text="HISTORY" textAlignment="CENTER" textFill="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="327.0" layoutY="604.0" prefWidth="266.0" text="2024 INSIDE OUT. All Rights Reserved©." textFill="#2b2b2b">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" focusColor="#2b2b2b" layoutX="616.0" layoutY="430.0" prefHeight="32.0" prefWidth="197.0" promptText="Name" stylesheets="@../styles.css" unFocusColor="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPrice" focusColor="#2b2b2b" layoutX="616.0" layoutY="475.0" prefHeight="32.0" prefWidth="197.0" promptText="Price" stylesheets="@../styles.css" unFocusColor="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtStock" focusColor="#2b2b2b" layoutX="616.0" layoutY="518.0" prefHeight="32.0" prefWidth="197.0" promptText="Stock" stylesheets="@../styles.css" unFocusColor="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbKitemId" focusColor="#2b2b2b" layoutX="616.0" layoutY="383.0" prefHeight="25.0" prefWidth="119.0" promptText="K.item ID" unFocusColor="#e6e6dd" />
+      <JFXComboBox fx:id="cmbGitemId" focusColor="#2b2b2b" layoutX="616.0" layoutY="341.0" prefHeight="25.0" prefWidth="119.0" promptText="G.Item ID" unFocusColor="#e6e6dd" />
+      <JFXComboBox fx:id="cmbLitemId" focusColor="#2b2b2b" layoutX="616.0" layoutY="301.0" prefHeight="25.0" prefWidth="119.0" promptText="L.Item ID" unFocusColor="#e6e6dd" />
+      <Label fx:id="lblDate" alignment="CENTER" layoutX="708.0" layoutY="216.0" prefHeight="22.0" prefWidth="146.0" text="2024-10-09" textAlignment="CENTER" textFill="#2b2b2b">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="616.0" layoutY="255.0" text="ORDER ID -" textFill="#2b2b2b">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderId" alignment="CENTER" layoutX="738.0" layoutY="255.0" prefHeight="23.0" prefWidth="59.0" text="P000" textAlignment="CENTER" textFill="#ee5a24">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="655.0" layoutY="565.0" onAction="#btnAddToCartOnAction" prefHeight="32.0" prefWidth="119.0" style="-fx-background-color: #2b2b2b;" text="ADD TO CART" textAlignment="CENTER" textFill="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtQty" focusColor="#2b2b2b" layoutX="169.0" layoutY="547.0" prefHeight="25.0" prefWidth="101.0" promptText="Quantity " stylesheets="@../styles.css" unFocusColor="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="549.0" onAction="#btnPlaceOrderOnaction" prefHeight="32.0" prefWidth="119.0" style="-fx-background-color: #2b2b2b;" text="PLACE ORDER" textAlignment="CENTER" textFill="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="293.0" layoutY="552.0" text="NET TOTAL -" textFill="#2b2b2b">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNetTotal" alignment="CENTER" layoutX="415.0" layoutY="552.0" prefHeight="23.0" prefWidth="101.0" text="LKR.0000.00" textAlignment="CENTER" textFill="#ee5a24">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="129.0" layoutY="227.0" prefHeight="27.0" prefWidth="328.0" text="ADD TO CART AND PLACE ORDER" textAlignment="CENTER" textFill="#b33939">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" alignment="CENTER" layoutX="539.0" layoutY="217.0" prefHeight="23.0" prefWidth="146.0" text="Time : 09 : 45 : 56" textAlignment="CENTER" textFill="#ee5a24">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

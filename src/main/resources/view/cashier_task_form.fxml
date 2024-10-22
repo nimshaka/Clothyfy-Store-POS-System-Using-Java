@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierTaskFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b2b2b" height="205.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e6e6dd" height="359.0" layoutX="-4.0" layoutY="203.0" stroke="WHITE" strokeType="INSIDE" width="600.0" />
+      <ImageView fitHeight="252.0" fitWidth="252.0" layoutX="171.0" layoutY="-49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="444.0" onAction="#btnProductManageOnAction" prefHeight="44.0" prefWidth="155.0" style="-fx-background-color: #2b2b2b;" text="PRODUCT" textAlignment="CENTER" textFill="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="400.0" layoutY="444.0" onAction="#btnPlaceOrderOnAction" prefHeight="44.0" prefWidth="150.0" style="-fx-background-color: #2b2b2b;" text="ORDER" textFill="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="142.0" fitWidth="150.0" layoutX="46.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/product.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="142.0" layoutX="400.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/order.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="165.0" layoutY="528.0" text="2024 INSIDE OUT. All Rights Reserved©." textFill="#2b2b2b">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="222.0" layoutY="444.0" onAction="#btnSupplierManageOnAction" prefHeight="44.0" prefWidth="155.0" style="-fx-background-color: #2b2b2b;" text="SUPPLIER" textAlignment="CENTER" textFill="#e6e6dd">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="220.0" layoutY="270.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/supplier.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="179.0" layoutY="219.0" prefHeight="27.0" prefWidth="233.0" text="EMPLOYEE DASHBOARD" textAlignment="CENTER" textFill="#b33939">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
